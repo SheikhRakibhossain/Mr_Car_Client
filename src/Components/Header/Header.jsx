@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from '../../assets/logo.svg'
 const Header = () => {
 
     const options = <>
@@ -12,7 +12,7 @@ const Header = () => {
      <li><Link to='/login' >Login</Link></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 h-[100px] border-2">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -22,7 +22,7 @@ const Header = () => {
                        {options}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <Link to='/'><img src={logo} alt="car logo" className="w-16 md:w-32 lg:w-24" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
