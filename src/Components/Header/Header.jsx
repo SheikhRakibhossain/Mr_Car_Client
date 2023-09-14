@@ -8,7 +8,7 @@ const Header = () => {
      <li><Link to='/about' >About Us</Link></li>
      <li><Link to='/blog' >Blog</Link></li>
      <li><Link to='/services' >Services</Link></li>
-     <li><Link to='/register' >Register</Link></li>
+     <li><Link to='/signup' >Register</Link></li>
      <li><Link to='/login' >Login</Link></li>
     </>
     return (
